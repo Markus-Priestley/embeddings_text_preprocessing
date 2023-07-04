@@ -1,0 +1,253 @@
+{
+    "intents": [
+      {
+        "tag": "Immigration Records",
+        "patterns": [
+          "How do I retreive my previous immigration records?", 
+          "How do I make request multiple copies of my immigration records",
+          "Do immigration records become inaccesible after a certian period of time?",
+          "How long does it take to get your immigration records after you order them?",
+          "What are immigration records?",
+          "How serious is it to loose immigration records?",
+          "Can you enter the United States without immigration records?",
+          "Is not being able to produce immigration records a crime?",
+          "Do all countries keep track of immigration records?",
+          "Do countries collaborate when it comes to keeping immigration records?",
+          "What do you need immigration records for?",
+          "Do all countries require you to have immigration records?",
+          "What countries require you to have immigration records?",
+          "What is the US department that handles immigration records?",
+          "What are the required documents to immigrate to another country?",
+          "Are crimes commited in other countries part of your immigration record?",
+          "Does a U.S. felony show up on your immigration records?",
+          "Where do you go in order to get your immigration records?",
+          "What us the fastest way to get your immigration records?",
+          "Does commiting a felony inn the united states stop you from traveling to other countries?",
+          "How accurate are the United States immigration statistics?",
+          "How many immigrants are in the United states without proper documentation?",
+          "How do you get into the United States without proper immigration documents?",
+          "When were the conventions for immigration records created?",
+          "How do people without proper immigration paperwork effect the economy?",
+          "Why does it take to long to get your imigration records?",
+          "Why are immigration records required?",
+          "Is there a way to access other peoples immigration records?",
+          "Is it illegal to share someone elses immigration records to the public?",
+          "Who created the concept of immigration records?",
+          "Will we ever abolish the use of immigration records?"
+        ],
+        "responses": [
+          "It seems like you are looking for Immigration Records"
+        ]       
+      },
+
+
+
+      {
+        "tag": "Travel Records",
+        "patterns": [
+          "How long have countries been using travel records?",
+          "Are travel records valid evidence in the court of law?",
+          "Can you use travel records to form an undeniable alibi?",
+          "What is the point of travel records?",
+          "When did the United States start using travel records?",
+          "Does every country keep travel records?",
+          "What do you potentially need your travel records for?",
+          "How long does it take to get your travel records?",
+          "Where can you request your travel records?",
+          "How do you request your travel records?",
+          "Does the coutry you travel to have control over your travel records?",
+          "Do coutries colaborate in order to create travel records?",
+          "Is it a crime to falsify travel records?",
+          "What do I need in order to travel to another country?",
+          "How serious of a crime is it to falsify travel records?",
+          "Is it possible to create fake travel records?",
+          "Which US department handles travel records?",
+          "What is the record for most countries traveled to in a month?", 
+          "Are there any countries that dont keep any travel records?",
+          "Do you need to have travel records in order to enter the US?",
+          "Is there any way to speed up the process of getting your travel records?",
+          "What is the fastest way to get your travel records?",
+          "What do you need your travel records for?",
+          "Can you travel without having your travel records?",
+          "Do you have to do anything in order to keep your travel records updated?",
+          "How does the government keep track of your travel records?",
+          "Is there any way to see the travel records of someone else?",
+          "Are any travel records public information?",
+          "Is there any way to delete your travel records?",
+          "Is it a crime to not be able to produce travel records?",
+          "Can the police check your travel records?"
+        ],
+        "responses": [
+          "It seems like you are looking for Travel Records"
+        ]       
+      },
+
+
+
+      {
+        "tag": "IRS Records",
+        "patterns": [
+          "Is there a way to legally avoid taxes?",
+          "Who invented the IRS?",
+          "Who is the leader of the IRS?",
+          "Who has the most control over the IRS?",
+          "Who does the IRS answer to?",
+          "What does the IRS do?",
+          "What was the IRS created for?",
+          "What does the IRS keep records of?",
+          "What IRS records do I have access to?",
+          "Do IRS records ever exprire?",
+          "How long does the IRS keep records on you?",
+          "What records does the IRS have about me?",
+          "When can the IRS pull up my records?",
+          "What government officials have access to IRS records?",
+          "Are IRS records permanent?",
+          "What IRS records do I have access to?",
+          "Is there a wayto cancel some of your IRS records?",
+          "Is tampering with IRS records illegal?",
+          "How do I get away with tax fraud?",
+          "Is the IRS good at catching fraud?",
+          "How much money does the IRS collect each year?",
+          "What can I do with my IRE records?",
+          "Where can I find my IRS records?",
+          "What about my taxes is recorded by the IRS?",
+          "Are peole who potentially commited tax fraud recorde by the IRS?",
+          "Are IRS tax records public?",
+          "Is the IRS required to relese any tax records?",
+          "What is the use of IRS records?",
+          "Do IRS records tranfer to other countries?",
+          "Do other countries keep records like the IRS?",
+          "How long does it take to get access to your IRS records?"
+        ],
+        "responses": [
+          "It seems like you are looking for IRS Records"
+        ]       
+      },
+
+
+
+      {
+        "tag": "Medical Records",
+        "patterns": [
+          "Is there a national standard for medical records?",
+          "Does each medical company have control over how they format and handle their medical redords?",
+          "Is there a way to request your medical records to be presented to you in a differnt way?",
+          "Can medical records serve as evidence in the court of law?",
+          "Do companies have a time frame in which they have to get you you medical records?",
+          "Does every medical company have to keep medical records?",
+          "What records do medical companies have to keep?",
+          "Can a medical company deny to give you your health records?",
+          "Can you request the health records of a family member?",
+          "Are health records confidential?",
+          "Who has access to your health records?",
+          "How long does it take for you to get your health records after a hospital visit?",
+          "What medical records do hospitals keep on you?",
+          "Do different hospitals have access to all of your health records?",
+          "Can you give someone access to your health records?",
+          "How long do medical companies keep your helath records?",
+          "What company keeps track of the most health records?",
+          "Do government organizations have access to your health records?",
+          "Are there any public health records?",
+          "Is there any way to speed up the process of receiving your medical records?",
+          "How much data does the average health record take up?",
+          "How much data is allocated to keeping all of the health records in the US?",
+          "How secure are your health records stored?",
+          "Has there ever been a breach in confidential health records?",
+          "Is there any compensation if your private health information gets leaked?",
+          "Is there a market for peoples health records?",
+          "Do medical companies profit from keeping health records?",
+          "Is it a felony to falsify health records?",
+          "Can you access your childreans health records?",
+          "Do your parents loose access to your health records when you turn 18?",
+          "Do sports coaches have access to players health records?"
+        ],
+        "responses": [
+          "It seems like you are looking for Medical Records"
+        ]       
+      },
+
+
+
+      {
+        "tag": "Personnel Records",
+        "patterns": [
+          "What information is contained in personnel records?",
+          "What can employers see from your personnel records?",
+          "What can employers force you to disclose for personnel records?",
+          "What company position keeps track of personnel records?",
+          "Is it legal for employees to look at personnel records?",
+          "Are personnel records confidential?",
+          "How long does a company hold on to personnel records?",
+          "Do companoes have to disclose personnel records to law inforcement?",
+          "Can personnel records be used in the court of law?",
+          "When can companies discolose personnel records?",
+          "Can you opt out of being part of a companies personnel records?",
+          "Are personnel records ever open to the public?",
+          "Do companies have to keep personnel records?",
+          "Am I allowed to view my own personnel record?",
+          "Am I allowed to view any of my collegues personnel records?",
+          "Can a collegue give me permisson to view their personnel record?",
+          "What records are companies allowed to keep on you?",
+          "Are companies allowed to share their personnel records with other companies?",
+          "Can future employers request to see personnel records from your previous company?",
+          "How long does it take to view your personal record at a company?",
+          "Can family memebers request to view your personnel record?",
+          "Can personnel records be used in the court of law?",
+          "Do companies have an obligation to keep personnel records of any sort?",
+          "Are there any companies that dont keep any personnel records?",
+          "What is the benefit of a company using personnel records?",
+          "What system do companies use to create personnel records?",
+          "How much resources do companies put into personnel records upkeep?",
+          "Is there a way to automate my companies personnel records?",
+          "How do I access my companies personnel records?",
+          "Is it a crime to falsify personnel records?",
+          "How big of a crime is it to lie on personnel records?"
+        ],
+        "responses": [
+          "It seems like you are looking for Personnel Records"
+        ]       
+      },
+
+
+      
+      {
+        "tag": "Military Records",
+        "patterns": [
+          "What does the military keep records of?",
+          "How confidential are military records?",
+          "Is there a ranking system for military record confidentiality?",
+          "What is the highest clearance for military records?",
+          "How do you increase your military records clearance?",
+          "What military records do government officials have access to?",
+          "Does the president have access to all military records?",
+          "How much access does a normal civilian to military records?",
+          "What records does the military keep public?",
+          "Is there a way to access classified military records without clearance?",
+          "Is it a crime to look at classified military records?",
+          "How hard is it to get the highest military clearance?",
+          "Show me military tank records",
+          "Show me military plane records",
+          "Show me military activity records?",
+          "Do you gain access to higher clearance from just being in the military?",
+          "What is the specific crime called for leaking military records?",
+          "Can you get the death penalty for leaking military records?",
+          "Is the military ever obligated to release any records?",
+          "Are there any instances of military records being falsified?",
+          "What is the criteria for the clasification of military records?",
+          "What is the most viewd military record?",
+          "How are militry records organized?",
+          "Is there an archive of all military records?",
+          "What job positions work with military records?",
+          "What military records are shared with other countries?",
+          "Does the US have access to a lot of other countries miltary records?",
+          "Are there any declasified military records containing information about weapons?",
+          "Are military records mostly administrative?",
+          "How much data is used by the military to keep their records?",
+          "Do military records contain information on energy sources?"
+        ],
+        "responses": [
+          "It seems like you are looking for Military Records"
+        ]       
+      }
+    ]
+  }

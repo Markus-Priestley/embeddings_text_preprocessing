@@ -3,6 +3,7 @@ import json
 import re
 from nltk.stem import WordNetLemmatizer
 import string
+import sys
 
 # Prompt user to input json file name and opens file
 jsonFileName = input("Enter json File: ")
@@ -13,7 +14,7 @@ try:
         jsonObject = json.load(openedJson) 
 except:
     print("Must input an existing json file")
-    exit
+    sys.exit()
 
 # Converts json dict into a string which will be parsed
 jsonString = json.dumps(jsonObject)
@@ -32,14 +33,15 @@ intentTagsList = [tag.translate(str.maketrans('', '', string.punctuation)) for t
 
 # Parses all questions/requests into tagSentences list where each idex contains all the
 #     questions/requests for the tag at the same index on the intentTagsList
-tagSentences = re.findall('"patterns": \[([A-Za-z0-9?., "]+)\]', jsonString)
+tagSentences = re.findall('"patterns": \[([A-Za-z0-9?.,)\-( "\'+]+)\]', jsonString)
 # Creates a list with each individual questions/request for the first tag in the intentTagsList
 index0TagSentences = re.findall('"([A-Za-z0-9?., ]+)"', tagSentences[0])
-
+print("cheese")
+print(index0TagSentences)
 # This function does the same thing as line 27 (creates a list of sentences/requests for a single
 #     tag from a list of all sentences/requests) but can be used for any tag
 def seperateTagSentences(tagIndex):
-    return re.findall('"([A-Za-z0-9?., ]+)"', tagSentences[tagIndex])
+    return re.findall('"([A-Za-z0-9?+., )\-(\']+)"', tagSentences[tagIndex])
 
 # Creates a list similar to tagSentences, but each index is a list with questions/requests as
 #     entries
@@ -96,7 +98,7 @@ if len(userInput) != 0:
         print(matchingTags)
     except:
         print("Must enter a valid number")
-        exit
+        sys.exit()
 else:
     print("All questions/requests")
     print(allSentencesSeperated)
