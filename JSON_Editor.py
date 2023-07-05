@@ -1,9 +1,11 @@
 import json
 import re
+import nltk
 from nltk.stem import WordNetLemmatizer
 import string
 import sys
 from nltk.tokenize import sent_tokenize
+from nltk.corpus import stopwords
 
 # Prompt user to input json file name and opens file
 jsonFileName = input("Enter json File: ")
@@ -28,17 +30,19 @@ lemmatizer = WordNetLemmatizer()
 intentTagsList = [lemmatizer.lemmatize(tag) for tag in intentTagsList]
 # Removes punctuation
 intentTagsList = [tag.translate(str.maketrans('', '', string.punctuation)) for tag in intentTagsList]
+# Removes stopwords
+stopWords = set(stopwords.words('english'))
+for index in range(len(intentTagsList)):
+    intentTagsList[index] = [word for word in intentTagsList[index].split() if word not in stopWords]
+    intentTagsList[index] = " ".join(intentTagsList[index])
 # Sentence tokenize 
 intentTagsList = [sent_tokenize(tag) for tag in intentTagsList]
-print(len(intentTagsList))
-print(intentTagsList)
 # Now steps will be taken in order to seperate each tags questions/requests into their own lists
 
 # Parses all questions/requests into tagSentences list where each idex contains all the
 #     questions/requests for the tag at the same index on the intentTagsList
 tagSentences = re.findall('"patterns": \[([A-Za-z0-9?.,)\-( "\'+]*)\]', jsonString)
-print(len(tagSentences))
-print(tagSentences)
+
 # Creates a list with each individual questions/request for the first tag in the intentTagsList
 index0TagSentences = re.findall('"([A-Za-z0-9?., ]+)"', tagSentences[0])
 
@@ -51,6 +55,9 @@ def seperateTagSentences(tagIndex):
     lemmatizer = WordNetLemmatizer()
     editedTagSentences = [lemmatizer.lemmatize(sentence) for sentence in editedTagSentences]
     editedTagSentences = [sentence.translate(str.maketrans('', '', string.punctuation)) for sentence in editedTagSentences]
+    for index in range(len(editedTagSentences)):
+        editedTagSentences[index] = [word for word in editedTagSentences[index].split() if word not in stopWords]
+        editedTagSentences[index] = " ".join(editedTagSentences[index])
     editedTagSentences = [sent_tokenize(sentence) for sentence in editedTagSentences]
     return editedTagSentences
 
@@ -78,7 +85,7 @@ print("Intent Tags. Total:" , len(intentTagsList))
 print(intentTagsList)
 for index in range(len(tagSentences)):
     print("For", intentTagsList[index], "Tag, Press", index)
-
+    
 print("For All Tags, Press Enter (Leave Input Space Blank)")
 
 userInput = input("Enter a Number: ")
@@ -89,15 +96,15 @@ if len(userInput) != 0:
         for index in range(len(seperatedTagSentences[userInput])):
             matchingTags.append(intentTagsList[userInput])
         print("Questions/Requests Related to", intentTagsList[userInput])
-        print(seperatedTagSentences[userInput])
-        print("Matching Tags. Total:", len(matchingTags))
-        print(matchingTags)
+        for index in range(len(seperatedTagSentences[userInput])):
+            print("Intent Tag:", matchingTags[userInput], "Questions/Request:", seperatedTagSentences[userInput][index])
+        print("Total Questions/Requests:", len(seperatedTagSentences[userInput]))
     except:
         print("Must enter a valid number")
         sys.exit()
 else:
     print("All questions/requests")
-    print(allSentencesSeperated)
-    print("Matching Tags. Toatal:", len(allMatchingTags))
-    print(allMatchingTags)
+    for index in range(len(allSentencesSeperated)):
+        print("Intent Tag:", allMatchingTags[index], "Questions/Request:", allSentencesSeperated[index])
+    print("Total Questions/Requests:", len(allSentencesSeperated))
     
